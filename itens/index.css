@@ -107,7 +107,7 @@ input::placeholder{
     font-size: 1.3em;
     font-weight: lighter;
     background-color: rgb(110, 183, 214);
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.252);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.152);
     
     animation: alerta 2s linear .3s;
 }
@@ -116,10 +116,10 @@ input::placeholder{
 @keyframes alerta {
     0%{
         opacity: 0;
-        filter: blur(15px);
+        filter: blur(10px);
     }
     20%{
-        opacity: .6;
+        opacity: .5;
         filter: blur(0);
     }
     50%{
@@ -127,11 +127,11 @@ input::placeholder{
         filter: blur(0);
     }
     80%{
-        opacity: .4;
+        opacity: .5;
         filter: blur(0);
     }
     100%{
         opacity: 0;
-        filter: blur(30px);
+        filter: blur(15px);
     } 
 }
