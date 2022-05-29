@@ -1,4 +1,6 @@
-function password(){
+var alerta = document.querySelector('#aviso')
+
+function password(){  
     let carac = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&{}[]><?-_.()"
     let passwordLength = 12;
     let password = ""
@@ -8,4 +10,14 @@ function password(){
         password += carac.substring(RandomN, RandomN + 1)
     }
     document.querySelector('#senha').value = password
+    alerta.innerHTML = `Senha<br><strong>${password}</strong><br> foi copiada`
+}
+
+function copy(){
+    let copiar = document.querySelector("#senha").value
+    navigator.clipboard.writeText(copiar)
+
+    alerta.classList.toggle('active')
+    setTimeout(() => {
+    alerta.classList.toggle('active')}, 2000)
 }
