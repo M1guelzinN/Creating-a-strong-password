@@ -9,15 +9,16 @@ function password(){
         let RandomN = Math.floor(Math.random() * carac.length)
         password += carac.substring(RandomN, RandomN + 1)
     }
+
     document.querySelector('#senha').value = password
     alerta.innerHTML = `Senha<br><strong>${password}</strong><br> foi copiada`
 }
 
 function copy(){
     let copiar = document.querySelector("#senha").value
-    navigator.clipboard.writeText(copiar)
+        navigator.clipboard.writeText(copiar)
 
     alerta.classList.toggle('active')
-    setTimeout(() => {
-    alerta.classList.toggle('active')}, 2000)
+        setTimeout(() => {
+            alerta.classList.toggle('active')}, 2000)
 }

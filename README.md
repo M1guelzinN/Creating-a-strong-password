@@ -1,2 +1,4 @@
-# Creating-a-strong-password
- Sistema com Javascript que gera uma senha forte.
+# Gerador de senhas fortes
+ Sistema usando Javascript que embaralha os caracteres criando uma super senha forte.
+
+ 
