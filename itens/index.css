@@ -83,7 +83,6 @@ input::placeholder{
     font-size: 1.2em;
     font-weight: 100;
     text-align: center;
-
 }
 #create:hover{
     background-color: rgba(0, 19, 36, 0.844);
