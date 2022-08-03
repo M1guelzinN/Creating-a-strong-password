@@ -16,10 +16,15 @@ function CreateAPassword() {
 
 function copy() {
   const copiar = document.querySelector('#senha').value;
-  navigator.clipboard.writeText(copiar);
+
+  if(copiar.length > 1){
+    navigator.clipboard.writeText(copiar);
 
   alerta.classList.toggle('active');
   setTimeout(() => {
     alerta.classList.toggle('active');
   }, 2000);
+  }else{
+    alert('Clique primeiro em gerar uma senha')
+  }
 }

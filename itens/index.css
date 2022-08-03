@@ -108,7 +108,7 @@ input::placeholder{
     background-color: rgb(110, 183, 214);
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.152);
     
-    animation: alerta 2s linear .3s;
+    animation: alerta 3s cubic-bezier(.39, .54, .33, 1.12) .3s;
 }
 
 
@@ -117,20 +117,12 @@ input::placeholder{
         opacity: 0;
         filter: blur(10px);
     }
-    20%{
-        opacity: .5;
-        filter: blur(0);
-    }
     50%{
         opacity: 1;
         filter: blur(0);
     }
-    80%{
-        opacity: .5;
-        filter: blur(0);
-    }
     100%{
         opacity: 0;
-        filter: blur(15px);
+        filter: blur(10px);
     } 
 }
